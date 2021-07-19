@@ -1,0 +1,7 @@
+.divMainContainer{border: 0px solid red;}
+.containerDiv{float: left;padding: 1%;overflow: auto;}
+.leftDIv{border-right: 1px solid purple;background-color: wheat;}
+.rightDIv{border-right: 0px solid blue;}
+.liArgumentsItem{cursor: pointer;}
+.functionContentDivPrint{border-top: 1px solid orangered;}
+.notFoundDiv{border-top:1px solid grey;border-bottom:1px solid grey;text-align: center;}
