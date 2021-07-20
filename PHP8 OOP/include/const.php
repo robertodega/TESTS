@@ -60,7 +60,33 @@
         ]
         ,"Classi" => [
             "classes" =>[
-
+                "costruzione Classe"
+                ,"utilizzo costruttore di default <b>__construct</b>"
+                ,"costruzione oggetto con parametri a partire da classe costruttore"
+            ]
+        ]
+        ,"Classi 2" => [
+            "classes_2" =>[
+                "lettura e modifica valore variabili <br /><br /> - <i><b>pubbliche</b></i> (gestibili da qualunque parte)<br /> - <i><b>private</b></i> (<b>private</b>: gestibili solo all'interno della classe | <b>protected</b>: gestibili dalla classe e da quelle che la erediteranno)<br /><br />"
+                ,"metodi <i>getter</i>"
+                ,"metodi <i>setter</i>"
+            ]
+        ]
+        ,"Classi 3" => [
+            "classes_3" =>[
+                "ereditarietà di classi"
+                ,"override dei metodi"
+            ]
+        ]
+        ,"Interfacce" => [
+            "interfacce" =>[
+                "Implementazione di interfacce"
+                ,"utilizzo interfaccia in classe"
+            ]
+        ]
+        ,"Classi Astratte" => [
+            "abstracts" =>[
+                "Implementazione di classi astratte"
             ]
         ]
     ];

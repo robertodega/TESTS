@@ -5,50 +5,77 @@
     $fileName = substr($filePath,(strrpos($filePath,'/')+1));
     $functionName = str_replace("_"," ",str_replace(".php","",$fileName));
 
+    $argList = "";
+    if(isset($arguments["".$functionName.""])){
+        foreach($arguments["".$functionName.""] as $divName => $args){
+            $argList .= "<li>".implode("</li><li>",$args)."</li>";
+        }
+    }
+
     //  test function
 
     class Auto{
-        public $color = 'whitesmoke';
-        public $upholstery;
+        public $color = 'white';
+        private $model;
+        private $equipment;
+        private $engineSize;
+        private $interiors;
+
+        function __construct($color = 'white', $model = '', $equipment = '', $engineSize = '', $interiors = '')
+        {
+            $this->color=$color;
+            $this->model=$model;
+            $this->equipment=$equipment;
+            $this->engineSize=$engineSize;
+            $this->interiors=$interiors;
+        }
     }
 
     $auto = new Auto;
-    
+    $nissan = new Auto('grey','Qashqai','N-Connecta','1.5 TDI','black & grey');
 ?>
 
-    <!-- Vista risultati -->
+<!-- Vista risultati -->
 
 <div class="functionContentDiv">
-    <div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ] </div>
+<div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ]<br /><br /><?=$argList;?></div>
     <div class="functionContentDivPrint">
 <?php
-    $act = isset($_REQUEST["act"]) ? $_REQUEST["act"] : "";
-    $f = isset($_REQUEST["f"]) ? str_replace(".php","",str_replace("_"," ",$_REQUEST["f"])) : "";
-    if($act === "arg"){
-        $arg = $arguments["".$f.""];
-        foreach($arg as $a){
-            echo"<li>".$a."</li>";
-        }
-    }
-    else{
-        echo"<br /><i>class Auto{<br />&nbsp;&nbsp;&nbsp;public \$color = 'whitesmoke';<br />&nbsp;&nbsp;&nbsp;public \$upholstery;<br />}<br />\$auto = new Auto;<br /></i><br />";
-        echo"<li>Stampa di oggetto \$auto:<br />";var_dump($auto);echo"</li>";
-        echo"<li>Modifica attributo di classe - <i><b>\$auto->color = 'grey';</b></i><br />";$auto->color = 'grey';var_dump($auto);echo"</li>";
-    }    
+    echo"<li><br /><i>
+    class <b>Auto</b>{<br />
+        &nbsp;&nbsp;&nbsp;public \$color = 'white';
+        <br />&nbsp;&nbsp;&nbsp;private \$model;
+        <br />&nbsp;&nbsp;&nbsp;private \$equipment;
+        <br />&nbsp;&nbsp;&nbsp;private \$engineSize;
+        <br />&nbsp;&nbsp;&nbsp;private \$interiors;
+        <br />}
+    ";
+    echo"<br /><b>\$auto = new Auto;</b>";
+    echo"<br /><br />Stampa di oggetto <b>\$auto</b>:<br /><pre>";print_r($auto);echo"</pre></li>";
+    echo"<li>Modifica attributo <u>pubblico</u> di classe - <i><b>\$auto->color = 'grey';</b></i><br /><pre>";$auto->color = 'grey';print_r($auto);echo"</pre></li>";
+    echo"<li>Modifica attributo <u>privato</u> di classe - <i>";
+    echo"<br /><i>
+    class <b>Auto</b>{<br />
+        &nbsp;&nbsp;&nbsp;public \$color = 'white';
+        <br />&nbsp;&nbsp;&nbsp;private \$model;
+        <br />&nbsp;&nbsp;&nbsp;private \$equipment;
+        <br />&nbsp;&nbsp;&nbsp;private \$engineSize;
+        <br />&nbsp;&nbsp;&nbsp;private \$interiors;
+
+        <br /><br />&nbsp;&nbsp;&nbsp;<b>function __construct(\$color = 'white', \$model = '', \$equipment = '', \$engineSize = '', \$interiors = '')
+        <br />&nbsp;&nbsp;&nbsp;{
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\$this->color=\$color;
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\$this->model=\$model;
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\$this->equipment=\$equipment;
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\$this->engineSize=\$engineSize;
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\$this->interiors=\$interiors;
+            <br />&nbsp;&nbsp;&nbsp;}</b>
+    <br />}
+    <br /><b>\$nissan = new Auto('grey','Qashqai','N-Connecta','1.5 TDI','black & grey');</b>
+    ";
+    echo"<br /><br />Stampa di oggetto <b>\$nissan</b>:<br /><pre>";print_r($nissan);echo"</pre></li>";
 ?>
 
     </div>
 </div>
-<script>
-    var windowWidth = $(window).width();
-    var windowHeight = $(window).height();
-
-    var functionListDivPaddingTopPerc = 0.03;
-    var functionListDivPaddingPaddingTopPerc = 0.01;
-
-    var functionListDivPaddingTopPerc = 0.03;
-    var functionListDivPaddingPaddingTopPerc = 0.01;
-
-    $('.functionContentDivPrint').css("margin-top",windowHeight * functionListDivPaddingTopPerc);
-    $('.functionContentDivPrint').css("padding-top",windowHeight * functionListDivPaddingPaddingTopPerc);
-</script>
+<script src="js/sectionsJs.js"></script>

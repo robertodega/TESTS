@@ -49,6 +49,7 @@ function pageInit(){
     }
 
     $('.contentListDiv').load("include/sections/home.php");
+
 }
 
 // events

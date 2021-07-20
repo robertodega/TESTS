@@ -6,6 +6,13 @@
     $fileName = substr($filePath,(strrpos($filePath,'/')+1));
     $functionName = str_replace("_"," ",str_replace(".php","",$fileName));
 
+    $argList = "";
+    if(isset($arguments["".$functionName.""])){
+        foreach($arguments["".$functionName.""] as $divName => $args){
+            $argList .= "<li>".implode("</li><li>",$args)."</li>";
+        }
+    }
+
     //  test function
 
     function testFunction(){
@@ -17,13 +24,12 @@
         $c();
         return $res;
     }
-    
 ?>
 
-    <!-- Vista risultati -->
+<!-- Vista risultati -->
 
 <div class="functionContentDiv">
-    <div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ] </div>
+<div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ]<br /><br /><?=$argList;?></div>
     <div class="functionContentDivPrint">
 <?php
     $act = isset($_REQUEST["act"]) ? $_REQUEST["act"] : "";
@@ -47,16 +53,4 @@
 
     </div>
 </div>
-<script>
-    var windowWidth = $(window).width();
-    var windowHeight = $(window).height();
-
-    var functionListDivPaddingTopPerc = 0.03;
-    var functionListDivPaddingPaddingTopPerc = 0.01;
-
-    var functionListDivPaddingTopPerc = 0.03;
-    var functionListDivPaddingPaddingTopPerc = 0.01;
-
-    $('.functionContentDivPrint').css("margin-top",windowHeight * functionListDivPaddingTopPerc);
-    $('.functionContentDivPrint').css("padding-top",windowHeight * functionListDivPaddingPaddingTopPerc);
-</script>
+<script src="js/sectionsJs.js"></script>
