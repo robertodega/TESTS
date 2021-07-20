@@ -4,7 +4,8 @@
     $fileSubPath = stristr($filePath,"PHP8 OOP");
     $fileName = substr($filePath,(strrpos($filePath,'/')+1));
     $functionName = str_replace("_"," ",str_replace(".php","",$fileName));
-
+    if(strpos($functionName,"\\")){$functionName = substr($functionName,(strrpos($functionName,"\\")+1));}
+    
     $argList = "";
     if(isset($arguments["".$functionName.""])){
         foreach($arguments["".$functionName.""] as $divName => $args){
