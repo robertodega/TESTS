@@ -21,10 +21,15 @@
     <!-- Vista risultati -->
 
 <div class="functionContentDiv">
-    <div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ] </div>
+    <div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ] - <br /><br /><?=$argList;?></div>
     <div class="functionContentDivPrint">
 <?php
-    //  actual code here
+    echo"
+        <li>Le <b>classi astratte</b> definiscono un'interfaccia <u>senza però implementarla completamente</u></li>
+        <li>servono a svolgere la funzione di <i>classe base</i> e non possono essere istanziate direttamente ma devono essere estese da altre classi</li>
+        <li>basta un solo metodo astratto nella classe per definirla <i>astratta</i></li>
+        <li>Una classe che eredita da una classe astratta <u>deve implementare tutti i metodi astratti</u> della classe madre</li>
+    ";
 ?>
 
     </div>

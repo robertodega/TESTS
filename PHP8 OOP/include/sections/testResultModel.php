@@ -21,7 +21,7 @@
     <!-- Vista risultati -->
 
 <div class="functionContentDiv">
-    <div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ] </div>
+<div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ]<br /><br /><?=$argList;?></div>
     <div class="functionContentDivPrint">
 <?php
     //  actual code here

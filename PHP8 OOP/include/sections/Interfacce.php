@@ -77,6 +77,19 @@
         <li>Tutti i metodi di una <i>interface</i> devono essere dichiarati <b>pubblici</b></li>
         <li>i metodi scritti nell'interface <b>non hanno corpo ma solo dichiarazione</b></li>
         <li>la parola chiave per implementare unìinterfaccia in una classe è <i><b>implements</b></i>, seguita dal nome dell'interface</li>
+
+        <br /><i>&nbsp;&nbsp;&nbsp;interface iCar{
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public function stop();
+            <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public function start();
+            <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public function changeGear(int $v);
+            <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public function park();
+            <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public function accelerate();
+        <br />&nbsp;&nbsp;&nbsp;}</i>
+
+        <br /><br /><i>&nbsp;&nbsp;&nbsp;class Auto implements iCar{
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+        <br />&nbsp;&nbsp;&nbsp;}</i>
+
         <br /><br />Stampa di oggetto <b>\$auto</b>:<br /><pre>";print_r($auto);echo"</pre>
         ".$auto->start()."".$auto->changeGear(1)."
         <br /><br />Stampa di oggetto <b>\$auto</b> dopo metodo <b>start</b><br />
