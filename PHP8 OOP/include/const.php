@@ -89,4 +89,23 @@
                 "Implementazione di classi astratte"
             ]
         ]
+        ,"Metodi Statici e Final" => [
+            "staticFinale" =>[
+                "Significato di parola chiave <i>static</i>"
+                ,"Significato di parola chiave <i>final</i>"
+            ]
+        ]
+        ,"Proprietà tipificate" => [
+            "typed" => [
+                "Tipizzazione proprietà oggetto"
+                ,"inizializzazione oggetto tramite costruttore di default"
+                ,"inizializzazione oggetto in maniera <b>automatica</b>"
+            ]
+        ]
+        ,"Costruttore automatico" => [
+            "automaticConstructor" => [
+                "utilizzo costruttore automatico di classe"
+            ]
+        ]
+
     ];
