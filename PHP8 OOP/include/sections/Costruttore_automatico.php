@@ -36,10 +36,14 @@
             ,$address='',$age=0
         )
         {
-            
+            $this->$name = $name;
+            $this->lastname = $lastname;
+            $this->phone = $phone;
+            $this->address = $address;
+            $this->age = $age;
         }
     }
-    $personConstruct = new PersonConstruct('Roberto','De Gaetano','123456789','',44);
+    $personConstruct = new PersonConstruct('Roberto','De Gaetano','123456789','-',44);
 
     /* */
     
