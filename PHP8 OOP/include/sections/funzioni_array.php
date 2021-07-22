@@ -40,10 +40,15 @@
         }
     }
     else{
-        echo"Array \$arr:<pre>";print_r($arr);echo"</pre><b>list</b> di \$arr<pre>";var_dump($a,$b,$c);echo"</pre>";
-        echo"<br />Array \$userData:<pre>";print_r($userData);echo"</pre><b>list</b> di \$userData (array associativo) con indici non numerici <i>chiamati come la variabile assegnata</i><br />(list('name' => \$name,'lastname' => \$lastname) = \$userData)<br />var_dump(\$name,\$lastname)<br /><pre>";var_dump($name,$lastname);echo"</pre>";
-        echo"<br />Destrutturazione array \$userData tramite <b>source sintax</b> (alternativa a <i>list</i>)<br />(['name' => \$name, 'lastname' => \$lastname ] = \$userData)<br />var_dump(\$name,\$lastname)<br /><pre>";var_dump($name,$lastname);echo"</pre>";
-        echo"<br />array associativo multidimensionale \$userData2<pre>";var_dump($userData2);echo"</pre><br />utilizzo di source sintax in foreach<br />";
+        echo"
+            Array \$arr:<pre>";print_r($arr);echo"</pre><b>list</b> di \$arr<pre>";var_dump($a,$b,$c);echo"</pre>
+            <br />Array \$userData:<pre>";print_r($userData);echo"</pre><b>list</b> di \$userData (array associativo) con indici non numerici <i>chiamati come la variabile assegnata</i><br />(list('name' => \$name,'lastname' => \$lastname) = \$userData)<br />var_dump(\$name,\$lastname)<br /><pre>";var_dump($name,$lastname);echo"</pre>
+            <br />Destrutturazione array \$userData tramite <b>source sintax</b> (alternativa a <i>list</i>)<br />(['name' => \$name, 'lastname' => \$lastname ] = \$userData)<br />var_dump(\$name,\$lastname)<br /><pre>";var_dump($name,$lastname);echo"</pre>
+            <br />array associativo multidimensionale \$userData2<pre>";var_dump($userData2);echo"</pre><br />utilizzo di source sintax in foreach<br />        
+            <br />&nbsp;&nbsp;&nbsp;<i>foreach(\$userData2 as ['name' => \$nameIdexed, 'lastname' => \$lastnameIdexed ]){
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo\".\$nameIdexed.' '.\$lastnameIdexed;
+            <br />&nbsp;&nbsp;&nbsp;}</i><br />
+        ";
         foreach($userData2 as ['name' => $nameIdexed, 'lastname' => $lastnameIdexed ]){
             echo"<br />".$nameIdexed." ".$lastnameIdexed;
         }
