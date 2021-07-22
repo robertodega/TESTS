@@ -1,5 +1,6 @@
 <?php
     $title = "PHP8 OOP";
+    $notesPath = "https://github.com/robertodega/TESTS/tree/main/PHP8%20OOP";
     $rootPath = "./";
     $sectionsPath = "include/sections/";
     $notFoundPage = "notFound.php";

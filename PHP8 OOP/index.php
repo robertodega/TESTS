@@ -19,6 +19,7 @@
             <div class="containerDiv leftDIv">
                 <div class="functionListDiv" style='padding:1%'>
                     <ul class="navbar-nav">
+                        <li class="nav-item liArgumentsItem" id="argItemNotes">Files</li><hr />
                         <li class="nav-item liArgumentsItem" id="argItemHome">Home</li><hr />
     <?php 
         foreach($arguments as $func => $cont){

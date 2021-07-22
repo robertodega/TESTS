@@ -1,5 +1,6 @@
 
 // variables
+var notesPath = "https://github.com/robertodega/TESTS/tree/main/PHP8%20OOP";
 var toggleArg = new Array();
 
 var minWidthValue = 600;
@@ -83,3 +84,4 @@ $('.liArgumentsItem').each(function(){
 });
 
 $('#argItemHome').on('click',function(){document.location.href='';});
+$('#argItemNotes').on('click',function(){window.open(notesPath);});
