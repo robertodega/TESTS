@@ -15,6 +15,8 @@
 
     //  test function
     
+    /* PHP 8 */
+    
     class PersonConstruct{
         public function __construct(
             public string $name,public string $lastname,public string $phone
@@ -25,12 +27,28 @@
         }
     }
     $personConstruct = new PersonConstruct('Roberto','De Gaetano','123456789',age:44);
+    
+    /* PHP 7 *
+
+    class PersonConstruct{
+        public function __construct(
+            $name,$lastname,$phone
+            ,$address='',$age=0
+        )
+        {
+            
+        }
+    }
+    $personConstruct = new PersonConstruct('Roberto','De Gaetano','123456789','',44);
+
+    /* */
+    
 ?>
 
     <!-- Vista risultati -->
 
 <div class="functionContentDiv">
-<div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ]<br /><br /><?=$argList;?></div>
+    <div class="functionContentDivFilename">[ <?=$fileSubPath?> ]   -   [PHP Version: <b><?=PHP_VERSION?></b>]<br /><br /><?=$argList;?></div>
     <div class="functionContentDivPrint">
 <?php
     echo"

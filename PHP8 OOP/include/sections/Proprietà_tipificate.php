@@ -14,6 +14,9 @@
     }
 
     //  test function
+
+    /* PHP 8 */
+
     class Person{
         public string $name;
         public string $lastname;
@@ -21,16 +24,16 @@
         public ?string $address = '';
         public ?string $phone = '';
 
-        /* costruttore di default *
+        // costruttore di default
 
-        public function __construct()
-        {
-            $this->setName('Roberto');
-            $this->lastname = '';
-            $this->phone = '123456789';
-        }
+        //  public function __construct()
+        //  {
+        //      $this->setName('Roberto');
+        //      $this->lastname = '';
+        //      $this->phone = '123456789';
+        //  }
         
-        /* costruttore parametrizzato */
+        // costruttore parametrizzato
         
         public function __construct(
             string $name, string $lastname, string $phone
@@ -43,12 +46,6 @@
             $this->address = $address;
             $this->age = $age;
         }
-        
-        /* */
-
-
-
-        /* */
 
         //  metodi getter & setter creati automaticamente da vscode (right click on property > 'Insert PHP 8 Getter & Setter')
 
@@ -57,6 +54,9 @@
          *
          * @return string
          */
+
+        /* */
+        
         public function getName(): string
         {
                 return $this->name;
@@ -69,6 +69,9 @@
          *
          * @return self
          */
+
+        /* */
+
         public function setName(string $name): self
         {
                 $this->name = $name;
@@ -81,6 +84,9 @@
          *
          * @return string
          */
+
+        /* */
+
         public function getLastname(): string
         {
                 return $this->lastname;
@@ -93,6 +99,9 @@
          *
          * @return self
          */
+
+        /* */
+
         public function setLastname(string $lastname): self
         {
                 $this->lastname = $lastname;
@@ -105,6 +114,10 @@
          *
          * @return int
          */
+
+
+        /* */
+
         public function getAge(): int
         {
                 return $this->age;
@@ -117,6 +130,9 @@
          *
          * @return self
          */
+
+        /* */
+
         public function setAge(int $age): self
         {
                 $this->age = $age;
@@ -129,6 +145,9 @@
          *
          * @return ?string
          */
+
+        /* */
+
         public function getAddress(): ?string
         {
                 return $this->address;
@@ -141,6 +160,9 @@
          *
          * @return self
          */
+
+        /* */
+
         public function setAddress(?string $address): self
         {
                 $this->address = $address;
@@ -153,6 +175,9 @@
          *
          * @return ?string
          */
+
+        /* */
+
         public function getPhone(): ?string
         {
                 return $this->phone;
@@ -165,6 +190,9 @@
          *
          * @return self
          */
+
+        /* */
+
         public function setPhone(?string $phone): self
         {
                 $this->phone = $phone;
@@ -175,13 +203,76 @@
 
     //  $person = new Person();
     $person = new Person(name:"Roberto",phone:"123456789",lastname:"-");
+
+    /* PHP 7 *
+
+    class Person{
+        public $name;
+        public $lastname;
+        public $age = 0;
+        public $address = '';
+        public $phone = '';
+
+        // costruttore di default
+
+        //  public function __construct()
+        //  {
+        //      $this->setName('Roberto
+        //      $this->lastname = 
+        //      $this->phone = '12345678
+        //
+    
+        // costruttore parametrizzato
+        
+        public function __construct(
+            string $name, string $lastname, string $phone
+            ,?string $address = '', int $age = 0
+        )
+        {
+            $this->setName($name);
+            $this->lastname = $lastname;
+            $this->phone = $phone;
+            $this->address = $address;
+            $this->age = $age;
+        }
+
+        public function getName()
+        {
+            return $this->name;
+        }
+
+        public function setName($name)
+        {
+            $this->name = $name;
+            return $this;
+        }
+
+        public function getPhone()
+        {
+                return $this->phone;
+        }
+
+        public function setPhone($phone)
+        {
+                $this->phone = $phone;
+
+                return $this;
+        }
+    }
+
+    //  $person = new Person();
+    $person = new Person("Roberto","123456789","","-");
+
+    /* */
+
+    
     
 ?>
 
     <!-- Vista risultati -->
 
 <div class="functionContentDiv">
-<div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ]<br /><br /><?=$argList;?></div>
+<div class="functionContentDivFilename">[ <?=$fileSubPath?> ]   -   [PHP Version: <b><?=PHP_VERSION?></b>]<br /><br /><?=$argList;?></div>
     <div class="functionContentDivPrint">
 <?php
     echo"

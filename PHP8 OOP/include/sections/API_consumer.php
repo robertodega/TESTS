@@ -24,7 +24,7 @@
     <!-- Vista risultati -->
 
 <div class="functionContentDiv">
-    <div class="functionContentDivFilename">[ <?=$fileSubPath?></b> ]<br /><br /><?=$argList;?></div>
+    <div class="functionContentDivFilename">[ <?=$fileSubPath?> ]   -   [PHP Version: <b><?=PHP_VERSION?></b>]<br /><br /><?=$argList;?></div>
     <div class="functionContentDivPrint">
 <?php
     echo"\$url: <a href='".$url."' target='_blank'>".$url."</a> (fake json api)<br />";
