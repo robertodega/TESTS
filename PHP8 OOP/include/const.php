@@ -108,5 +108,32 @@
                 "utilizzo costruttore automatico di classe"
             ]
         ]
-
+        , "Nullsafe operator" => [
+            "nullSafeOperator" => [
+                "Definizione e utilizzo del <b>Nullsafe operator</b>"
+            ]
+        ]
+        ,"Traits" => [
+            "traits" => [
+                "Cosa sono i <i>traits</i>"
+                ,"Utilizzo traits"
+            ]
+        ]
+        ,"Metodi Magici" => [
+            "magicMethods" => [
+                "<a href='https://www.php.net/manual/en/language.oop5.magic.php' target='_blank'>Magic Methods List</a>"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.decon.php#object.construct' target='_blank'>__construct()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;quando si istanzia la classe"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.decon.php#object.destruct' target='_blank'>__destruct()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;quando la classe viene distrutta (nessun riferimento rimanente alla classe)"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.overloading.php#object.call' target='_blank'>__call()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;chiamata a metodo non accessibile nella classe"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.overloading.php#object.callstatic' target='_blank'>__callStatic()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;chiamata a metodo <i>statico</i> non accessibile nella classe"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.overloading.php#object.get' target='_blank'>__get()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;leggere una propietà della classe non esistente"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.overloading.php#object.set' target='_blank'>__set()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;settare una propietà della classe non esistente"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.overloading.php#object.isset' target='_blank'>__isset()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;verificare se esiste la proprietà non esistentente della classe"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.overloading.php#object.unset' target='_blank'>__unset()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;distruggere la proprietà non esistentente della classe"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.magic.php#object.sleep' target='_blank'>__sleep()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;quando si serializza la classe"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.magic.php#object.wakeup' target='_blank'>__wakeup()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;quando si deserializza la classe "
+                ,"<a href='https://www.php.net/manual/en/language.oop5.magic.php#object.tostring' target='_blank'>__tostring()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;quando si utilizza l'oggetto in una funzione stringa (echo,print,etc.)"
+                ,"<a href='https://www.php.net/manual/en/language.oop5.magic.php#object.invoke' target='_blank'>__invoke()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;quando si utilizza l'oggetto nella classe come fosse una funzione"
+            ]
+        ]
     ];
