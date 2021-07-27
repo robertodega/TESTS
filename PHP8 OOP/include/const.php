@@ -136,4 +136,10 @@
                 ,"<a href='https://www.php.net/manual/en/language.oop5.magic.php#object.invoke' target='_blank'>__invoke()</a>&nbsp;&nbsp;&nbsp;->&nbsp;&nbsp;&nbsp;quando si utilizza l'oggetto nella classe come fosse una funzione"
             ]
         ]
+        ,"Namespace autoload" => [
+            "namespaces" => [
+                "<a href='https://www.php.net/manual/en/language.namespaces.php' target='_blank'>namespaces</a>"
+                ,"autoload function"
+            ]
+        ]
     ];
