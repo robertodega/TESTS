@@ -142,4 +142,12 @@
                 ,"autoload function"
             ]
         ]
+        ,"Composer" => [
+            "composer" => [
+                "<a href='https://getcomposer.org/' target='_blank'>Get Composer</a>"
+                ,"<a href='https://getcomposer.org/doc/03-cli.md#init' target='_blank'>composer init</a> - inizializzazione ambiente composer"
+                ,"<a href='https://getcomposer.org/doc/03-cli.md#require' target='_blank'>composer require</a> - pacchetto necessario al progetto"
+                ,"<a href='https://getcomposer.org/doc/03-cli.md#create-project' target='_blank'>composer create-project</a> - creazione progetto tramite composer"
+            ]
+        ]
     ];
