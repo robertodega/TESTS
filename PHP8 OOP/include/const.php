@@ -150,4 +150,12 @@
                 ,"<a href='https://getcomposer.org/doc/03-cli.md#create-project' target='_blank'>composer create-project</a> - creazione progetto tramite composer"
             ]
         ]
+        ,"Cookies" => [
+            "cookies" => [
+                "impostare cookies - <a href='https://www.php.net/manual/en/function.setcookie.php' target='_blank'>setcookie</a>"
+                ,"leggere cookies memorizzati"
+                ,"modificare cookies memorizzati"
+                ,"eliminare cookies memorizzati"
+            ]
+        ]
     ];
