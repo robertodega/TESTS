@@ -1,0 +1,9 @@
+.headerContainer{border: 0px solid red;background: url(../images/bg_1.jpeg);background-repeat: no-repeat; background-size: cover;}
+.aboutContainer,.contact_container{background: url(../images/bg_3.jpeg);background-repeat: no-repeat; background-size: cover;}
+.titleFont{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-shadow: 1px 1px black;}
+.cursiveFont{font-family: cursive ;}
+.headerSection{border: 0px solid red;}
+.aboutImg{float: right;max-width: 25%;margin: 2%;}
+.textualSection{font-size: x-large; color: black;text-shadow:1px 1px white;font-weight: bold;}
+.textualSection a{color: darkslategray;text-decoration: none;}
+.textualSection a:hover{text-decoration: underline;}

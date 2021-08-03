@@ -1,0 +1,1 @@
+<div class="container"><small><?=COPY_TEXT?></small></div>

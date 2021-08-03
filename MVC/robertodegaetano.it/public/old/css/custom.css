@@ -1,0 +1,38 @@
+.clearBoth {
+    clear: both;
+}
+
+.divCvDetails {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.divBoxCV {
+    width: 60%;
+}
+
+.divBoxCVQualification {
+    font-weight: bold;
+}
+
+.divBoxCVCompany {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.divBoxCVPeriod {
+    color: gray;
+}
+
+.download_cv_div {
+    padding: 2%;
+}
+
+.skillDiv {
+    padding: 2%;
+}
+
+.footerIcon{
+    width: 20%;
+    cursor: pointer;
+}
